@@ -71,6 +71,7 @@ resource "aws_kms_key" "ecs_logs" {
 
   description             = "Key for ECS Cluster: ${local.ecs_cluster_name}"
   deletion_window_in_days = 7
+  enable_key_rotation     = var.kms_key_enable_rotation
   rotation_period_in_days = var.kms_key_rotation_in_days
 
   tags = var.tags

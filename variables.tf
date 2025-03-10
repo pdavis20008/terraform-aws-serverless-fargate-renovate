@@ -28,6 +28,12 @@ variable "kms_key_arn" {
   default     = ""
 }
 
+variable "kms_key_enable_rotation" {
+  description = "Whether to enable key rotation"
+  type        = bool
+  default     = true
+}
+
 variable "kms_key_rotation_in_days" {
   description = "The number of days between key rotations"
   type        = number
