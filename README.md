@@ -1,6 +1,8 @@
 # terraform-aws-serverless-fargate-renovate
 Terraform Module for ECS Fargate-hosted RenovateBot
 
+Based on https://github.com/mooyoul/serverless-renovate-fargate
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
