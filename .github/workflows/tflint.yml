@@ -15,12 +15,12 @@ jobs:
       - name: Setup TFLint
         uses: terraform-linters/setup-tflint@v3
         with:
-          tflint_version: 0.55.1
+          tflint_version: v0.55.1
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.11.1
+          terraform_version: "~> 1.11.1"
 
       - name: Terraform Init
         run: terraform init -backend=false
